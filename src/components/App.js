@@ -1,16 +1,16 @@
 import React from 'react'
 import '../styles/App.css';
-import { ThemeProvider } from './ThemeProvider';
+import { ThemeProvider,ThemeContext } from './ThemeProvider';
 import { ThemeToggleButton } from './ThemeToggleButton';
-import { Page } from './Page'
+import { Page } from './Page';
 const App = () => {
 
   return (
     <div id="main">
-      <ThemeProvider>
+      <ThemeProvider.Provider>
         <Page />
         <ThemeToggleButton />
-      </ThemeProvider>
+      </ThemeProvider.Provider>
     </div>
   )
 }
