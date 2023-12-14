@@ -11,7 +11,7 @@ const Page = () => {
                 lorem ipsum dolor iterit n stuff
             </p>
             <button className={`btn btn-${theme} txt-${theme}`} id="themed-button">Themed Button</button>
-            <LocalThemedBox />
+            <LocalThemedBox theme={theme}/>
         </div>
     )
 }

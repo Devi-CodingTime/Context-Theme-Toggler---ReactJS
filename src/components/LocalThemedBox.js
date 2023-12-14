@@ -1,11 +1,7 @@
 import React from 'react';
-import { useContext } from 'react';
-import React from 'react';
-import { ThemeContext } from './ThemeProvider';
 
-const LocalThemedBox = () => {
-    const {theme} = useContext(ThemeContext);
-
+const LocalThemedBox = (props) => {
+const {theme} = props;
 return(
     <div style={{width:'200px',height:'200px',border:'2px solid green'}} id="local-themed-box" className={`bg-${theme==="light"?"dark":"light"}`}>
         {/* Write code below this line */}
@@ -17,4 +13,4 @@ return(
 )
 }
 
-export { LocalThemedBox }
+export {LocalThemedBox}
