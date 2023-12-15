@@ -8,8 +8,8 @@ const changeTheme = ()=>{
 }
 const data = {theme,changeTheme};
     return (
-        <React.Fragment value={data}>
-            <ThemeContext.Provider>
+        <React.Fragment>
+            <ThemeContext.Provider value={data}>
                 {props.children}
             </ThemeContext.Provider>
         </React.Fragment>

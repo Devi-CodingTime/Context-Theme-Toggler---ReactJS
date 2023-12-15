@@ -8,10 +8,10 @@ const App = () => {
   // const{theme,changeTheme} = useContext(ThemeContext);
   return (
     <div id="main">
-      <ThemeProvider.Provider>
+      <ThemeProvider>
         <Page />
         <ThemeToggleButton />
-      </ThemeProvider.Provider>
+      </ThemeProvider>
     </div>
   )
 }

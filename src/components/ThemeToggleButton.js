@@ -9,6 +9,5 @@ const ThemeToggleButton = () =>{
         {`Switch to ${theme=="light"?"dark":"light"} theme`}
        </button>
     )
-
 }
 export {ThemeToggleButton}
